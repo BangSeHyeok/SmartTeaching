@@ -22,6 +22,7 @@
       <link rel="stylesheet" href="resources/vendor/owl-carousel/owl.theme.css">
    </head>
    <body id="page-top">
+   
       <nav class="navbar navbar-expand navbar-light bg-white static-top osahan-nav sticky-top">
          &nbsp;&nbsp; 
          <button class="btn btn-link btn-sm text-secondary order-1 order-sm-0" id="sidebarToggle">
@@ -45,7 +46,10 @@
                <a class="nav-link" href="upload">
                <i class="fas fa-plus-circle fa-fw"></i>
                Upload Video
+               
                </a>
+               	<a href="com-page"> <i class="fas fa-plus-circle fa-fw"></i>
+               compage</a>
             </li>
             <li class="nav-item dropdown no-arrow mx-1">
                <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

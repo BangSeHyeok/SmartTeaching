@@ -76,4 +76,8 @@ public class HomeController {
 	public String video_page() {	
 		return "video-page";
 	}
+	@RequestMapping(value = "/com-page", method = RequestMethod.GET)
+	public String com_page() {	
+		return "com-page";
+	}
 }
