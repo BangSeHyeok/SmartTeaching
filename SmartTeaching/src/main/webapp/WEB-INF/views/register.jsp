@@ -32,7 +32,7 @@
                         <h5 class="mt-3 mb-3">Welcome to Vidoe</h5>
                         <p>It is a long established fact that a reader <br> will be distracted by the readable.</p>
                      </div>
-                     <form action="index.jsp">
+                     <form action="index">
                         <div class="form-group">
                            <label>Mobile number</label>
                            <input type="text" class="form-control" placeholder="Enter mobile number">
@@ -50,7 +50,7 @@
                         </div>
                      </form>
                      <div class="text-center mt-5">
-                        <p class="light-gray">Already have an Account? <a href="login.jsp">Sign In</a></p>
+                        <p class="light-gray">Already have an Account? <a href="login">Sign In</a></p>
                      </div>
                   </div>
                </div>
