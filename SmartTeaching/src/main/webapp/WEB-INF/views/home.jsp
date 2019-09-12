@@ -182,6 +182,28 @@ body{
 // Get the video
 var video = document.getElementById("myVideo");
 
+
+.login
+.login_title
+    %span Login to your account
+  .login_fields
+    .login_fields__user
+      .icon
+        %img{:src => 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/user_icon_copy.png'}
+      %input{:type => 'text',:placeholder => 'Username'}
+        .validation
+          %img{:src => 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/tick.png'}
+    .login_fields__password
+      .icon
+        %img{:src => 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/lock_icon_copy.png'}
+      %input{:type => 'password',:placeholder => 'Password'}
+      .validation
+        %img{:src => 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/tick.png'}
+    .login_fields__submit
+      %input{:type => 'submit',:value => 'Log In'}
+      .forgot
+        %a{:href => '#'} Forgotten password?
+
 </script>
 </body>
 </html>
