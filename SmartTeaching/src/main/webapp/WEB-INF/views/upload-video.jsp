@@ -27,7 +27,7 @@
          <button class="btn btn-link btn-sm text-secondary order-1 order-sm-0" id="sidebarToggle">
          <i class="fas fa-bars"></i>
          </button> &nbsp;&nbsp;
-         <a class="navbar-brand mr-1" href="index.jsp"><img class="img-fluid" alt="" src="resources/img/logo.png"></a>
+         <a class="navbar-brand mr-1" href="index"><img class="img-fluid" alt="" src="resources/img/logo.png"></a>
          <!-- Navbar Search -->
          <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-5 my-2 my-md-0 osahan-navbar-search">
             <div class="input-group">
@@ -42,7 +42,7 @@
          <!-- Navbar -->
          <ul class="navbar-nav ml-auto ml-md-0 osahan-right-navbar">
             <li class="nav-item mx-1">
-               <a class="nav-link" href="upload.jsp">
+               <a class="nav-link" href="upload">
                <i class="fas fa-plus-circle fa-fw"></i>
                Upload Video
                </a>
@@ -77,9 +77,9 @@
                Osahan 
                </a>
                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
-                  <a class="dropdown-item" href="account.jsp"><i class="fas fa-fw fa-user-circle"></i> &nbsp; My Account</a>
-                  <a class="dropdown-item" href="subscriptions.jsp"><i class="fas fa-fw fa-video"></i> &nbsp; Subscriptions</a>
-                  <a class="dropdown-item" href="settings.jsp"><i class="fas fa-fw fa-cog"></i> &nbsp; Settings</a>
+                  <a class="dropdown-item" href="account"><i class="fas fa-fw fa-user-circle"></i> &nbsp; My Account</a>
+                  <a class="dropdown-item" href="subscriptions"><i class="fas fa-fw fa-video"></i> &nbsp; Subscriptions</a>
+                  <a class="dropdown-item" href="settings"><i class="fas fa-fw fa-cog"></i> &nbsp; Settings</a>
                   <div class="dropdown-divider"></div>
                   <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal"><i class="fas fa-fw fa-sign-out-alt"></i> &nbsp; Logout</a>
                </div>
@@ -90,31 +90,31 @@
          <!-- Sidebar -->
          <ul class="sidebar navbar-nav">
             <li class="nav-item active">
-               <a class="nav-link" href="index.jsp">
+               <a class="nav-link" href="index">
                <i class="fas fa-fw fa-home"></i>
                <span>Home</span>
                </a>
             </li>
             <li class="nav-item">
-               <a class="nav-link" href="channels.jsp">
+               <a class="nav-link" href="channels">
                <i class="fas fa-fw fa-users"></i>
                <span>Channels</span>
                </a>
             </li>
             <li class="nav-item">
-               <a class="nav-link" href="single-channel.jsp">
+               <a class="nav-link" href="single-channel">
                <i class="fas fa-fw fa-user-alt"></i>
                <span>Single Channel</span>
                </a>
             </li>
             <li class="nav-item">
-               <a class="nav-link" href="video-page.jsp">
+               <a class="nav-link" href="video-page">
                <i class="fas fa-fw fa-video"></i>
                <span>Video Page</span>
                </a>
             </li>
             <li class="nav-item">
-               <a class="nav-link" href="upload-video.jsp">
+               <a class="nav-link" href="upload-video">
                <i class="fas fa-fw fa-cloud-upload-alt"></i>
                <span>Upload Video</span>
                </a>
@@ -126,47 +126,47 @@
                </a>
                <div class="dropdown-menu">
                   <h6 class="dropdown-header">Login Screens:</h6>
-                  <a class="dropdown-item" href="login.jsp">Login</a>
-                  <a class="dropdown-item" href="register.jsp">Register</a>
-                  <a class="dropdown-item" href="forgot-password.jsp">Forgot Password</a>
+                  <a class="dropdown-item" href="login">Login</a>
+                  <a class="dropdown-item" href="register">Register</a>
+                  <a class="dropdown-item" href="forgot-password">Forgot Password</a>
                   <div class="dropdown-divider"></div>
                   <h6 class="dropdown-header">Other Pages:</h6>
-                  <a class="dropdown-item" href="404.jsp">404 Page</a>
-                  <a class="dropdown-item" href="blank.jsp">Blank Page</a>
+                  <a class="dropdown-item" href="404">404 Page</a>
+                  <a class="dropdown-item" href="blank">Blank Page</a>
                </div>
             </li>
             <li class="nav-item">
-               <a class="nav-link" href="history-page.jsp">
+               <a class="nav-link" href="history-page">
                <i class="fas fa-fw fa-history"></i>
                <span>History Page</span>
                </a>
             </li>
             <li class="nav-item dropdown">
-               <a class="nav-link dropdown-toggle" href="categories.jsp" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               <a class="nav-link dropdown-toggle" href="categories" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                <i class="fas fa-fw fa-list-alt"></i>
                <span>Categories</span>
                </a>
                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="categories.jsp">Movie</a>
-                  <a class="dropdown-item" href="categories.jsp">Music</a>
-                  <a class="dropdown-item" href="categories.jsp">Television</a>
+                  <a class="dropdown-item" href="categories">Movie</a>
+                  <a class="dropdown-item" href="categories">Music</a>
+                  <a class="dropdown-item" href="categories">Television</a>
                </div>
             </li>
             <li class="nav-item channel-sidebar-list">
                <h6>SUBSCRIPTIONS</h6>
                <ul>
                   <li>
-                     <a href="subscriptions.jsp">
+                     <a href="subscriptions">
                      <img class="img-fluid" alt="" src="resources/img/s1.png"> Your Life 
                      </a>
                   </li>
                   <li>
-                     <a href="subscriptions.jsp">
+                     <a href="subscriptions">
                      <img class="img-fluid" alt="" src="resources/img/s2.png"> Unboxing  <span class="badge badge-warning">2</span>
                      </a>
                   </li>
                   <li>
-                     <a href="subscriptions.jsp">
+                     <a href="subscriptions">
                      <img class="img-fluid" alt="" src="resources/img/s3.png"> Product / Service  
                      </a>
                   </li>
@@ -492,7 +492,7 @@
                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
                <div class="modal-footer">
                   <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                  <a class="btn btn-primary" href="login.jsp">Logout</a>
+                  <a class="btn btn-primary" href="login">Logout</a>
                </div>
             </div>
          </div>
