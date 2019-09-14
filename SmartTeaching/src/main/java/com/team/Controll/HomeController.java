@@ -3,9 +3,6 @@ package com.team.Controll;
 import java.text.DateFormat;
 import java.util.Date;
 import java.util.Locale;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -19,7 +16,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class HomeController {
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String home(Locale locale, Model model) {	
-		return "home";
+		return "index";
 	}
 	@RequestMapping(value = "/404", method = RequestMethod.GET)
 	public String home_404() {	
@@ -82,8 +79,8 @@ public class HomeController {
 		return "com-page";
 	}
 	//채팅 홈 화면 띄우기
-	@RequestMapping(value = "/", method = RequestMethod.GET)
-	public String home() {
+	@RequestMapping(value = "/chatting", method = RequestMethod.GET)
+	public String chatting() {
 		return "chatting";
 	}
 

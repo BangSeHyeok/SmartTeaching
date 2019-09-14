@@ -15,7 +15,6 @@
 
 <script>
 var video = document.getElementById("myVideo");
-
 	
 	$(function(){
 				$('#login-button').click(function(){
@@ -25,7 +24,6 @@ var video = document.getElementById("myVideo");
 			    TweenMax.to("#container", .4, { scale: 1, ease:Sine.easeInOut});
 			  });
 			});
-
 			$(".close-btn").click(function(){
 			  TweenMax.from("#container", .4, { scale: 1, ease:Sine.easeInOut});
 			  TweenMax.to("#container", .4, { left:"0px", scale: 0, ease:Sine.easeInOut});
@@ -33,14 +31,12 @@ var video = document.getElementById("myVideo");
 			    $("#login-button").fadeIn(800);
 			  });
 			});
-
 			/* Forgotten Password */
 			$('#forgotten').click(function(){
 			  $("#container").fadeOut(function(){
 			    $("#forgotten-container").fadeIn();
 			  });
 			});
-
 	})
 </script>
 
@@ -52,19 +48,16 @@ var video = document.getElementById("myVideo");
   min-width: 100%;
   min-height: 100%;
 }
-
 html { 
   background: url(http://cdn.magdeleine.co/wp-content/uploads/2014/05/3jPYgeVCTWCMqjtb7Dqi_IMG_8251-1400x933.jpg) no-repeat center center fixed; 
   overflow: hidden;
 }
-
 img{
   display: block;
   margin: auto;
   width: 100%;
   height: auto;
 }
-
 #login-button{
   cursor: pointer;
   position: absolute;
@@ -81,7 +74,6 @@ img{
   overflow: hidden;
   opacity: 0.4;
   box-shadow: 10px 10px 30px #000;}
-
 /* Login container */
 #container{
   position: absolute;
@@ -97,7 +89,6 @@ img{
   box-shadow: 1px 1px 50px #000;
   display: none;
 }
-
 .close-btn{
   position: absolute;
   cursor: pointer;
@@ -115,11 +106,9 @@ img{
   -o-transition: all 2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-
 .close-btn:hover{
   opacity: .5;
 }
-
 /* Heading */
 h1{
   font-family: 'Open Sans Condensed', sans-serif;
@@ -130,7 +119,6 @@ h1{
   color: #ddd;
   text-shadow: 3px 3px 10px #000;
 }
-
 /* Inputs */
 a,
 input{
@@ -151,13 +139,11 @@ input{
   -o-transition: all 2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-
 input:focus{
   outline: none;
   box-shadow: 3px 3px 10px #333;
   background: rgba(3,3,3,.18);
 }
-
 /* Placeholders */
 ::-webkit-input-placeholder {
    color: #ddd;  }
@@ -167,7 +153,6 @@ input:focus{
    color: red;  }
 :-ms-input-placeholder {  
    color: #333;  }
-
 /* Link */
 a{
   font-family: 'Open Sans Condensed', sans-serif;
@@ -175,16 +160,13 @@ a{
   padding: 4px 8px;
   background: rgba(107,255,3,0.3);
 }
-
 a:hover{
   opacity: 0.7;
 }
-
 #remember-container{
   position: relative;
   margin: -5px 20px;
 }
-
 .checkbox {
   position: relative;
   cursor: pointer;
@@ -196,17 +178,14 @@ a:hover{
   width: 16px;
   height: 15px;
 }
-
 .checkbox:checked:active {
 	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
 }
-
 .checkbox:checked {
   background: rgba(3,3,3,.4);
 	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.5);
 	color: #fff;
 }
-
 .checkbox:checked:after {
 	content: '\2714';
 	font-size: 10px;
@@ -215,7 +194,6 @@ a:hover{
 	left: 4px;
 	color: #fff;
 }
-
 #remember{
   position: absolute;
   font-size: 13px;
@@ -224,7 +202,6 @@ a:hover{
   top: 7px;
   left: 20px;
 }
-
 #forgotten{
   position: absolute;
   font-size: 12px;
@@ -238,11 +215,9 @@ a:hover{
   -o-transition: all 2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-
 #forgotten:hover{
   color: rgba(255,255,255,.6);
 }
-
 #forgotten-container{
   position: absolute;
   top: 0;
@@ -257,11 +232,9 @@ a:hover{
   box-shadow: 1px 1px 50px #000;
   display: none;
 }
-
 .orange-btn{
   background: rgba(87,198,255,.5);
 }
-
 </style>
 
 
