@@ -20,7 +20,57 @@
       <!-- Owl Carousel -->
       <link rel="stylesheet" href="resources/vendor/owl-carousel/owl.carousel.css">
       <link rel="stylesheet" href="resources/vendor/owl-carousel/owl.theme.css">
+      
+      <!-- SAVE 버튼 추가 -->
+      <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+		<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
    </head>
+   <!--여기서부터 모든 css 추가 함-->
+   <style type="text/css">
+	.wrap {
+	   text-align: center;
+	   display: inline-block;
+	   margin-top: 10px;
+	}
+	
+	a {
+	   -webkit-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+	   -moz-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+	   -ms-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+	   -o-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+	   transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+	   display: block;
+	   max-width: 180px;
+	   text-decoration: none;
+	   border-radius: 4px;
+	   padding: 10px 15px;
+	   margin-left: 10px;
+	}
+	
+	a.button {
+	   font-weight: bold;
+	   color: #333333;
+	   box-shadow: #333333 0 0px 0px 2px inset;
+	}
+	
+	a.button:hover {
+	   color: rgba(255, 255, 255);
+	   box-shadow: #333333 0 0px 0px 40px inset;
+	}
+	hr.one{
+		width: 1000px; color:border-bottom; Opx; text-align: left; margin-left:Opx; color: grey;
+	}
+	hr.two{
+		width: 800px; color:border-bottom; Opx; text-align: left; margin-left:Opx; color: grey;
+	}
+	#indent {
+		margin-left: 2em;
+	}
+	#indentt {
+		margin-left: 20em;
+	}
+</style>
+   
    <body id="page-top">
       <nav class="navbar navbar-expand navbar-light bg-white static-top osahan-nav sticky-top">
          &nbsp;&nbsp; 
@@ -28,6 +78,7 @@
          <i class="fas fa-bars"></i>
          </button> &nbsp;&nbsp;
          <a class="navbar-brand mr-1" href="index"><img class="img-fluid" alt="" src="resources/img/logo.png"></a>
+         
          <!-- Navbar Search -->
          <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-5 my-2 my-md-0 osahan-navbar-search">
             <div class="input-group">
@@ -178,55 +229,60 @@
                <div class="row">
                   <div class="col-lg-12">
                      <div class="main-title">
-                        <h6>Settings</h6>
-                        <hr size="30" width="800" color="grey" align="center">
+                        <h3>Settings</h3>
+                        <hr class = "one">                   
                      </div>
                   </div>
                </div>
-               <form>
                   <div class="row">
                      <div class="col-sm-3">
                         <div class="form-group">
                            <label class="control-label">Computers</label>                           
                            <input class="form-control border-form-control" value="" placeholder="# of Computers" type="text">
-                           <hr size="30" width="600" color="grey">
+                           <hr class = "two">
                         </div>
                      </div>
                   </div>
                   <div class="row">
                      <div class="col-sm-6">
                         <div class="form-group">
-                           <label class="control-label">Recording</label>
-                           <div class="col-sm-6"></div>
-                           <label>Video format</label>
-                           <select>
-							  <option value="avi">avi</option>
-							  <option value="mp4">mp4</option>
-							  <option value="mpeg">mpeg</option>
-							  <option value="mk">mk</option>
-							</select>
-						</div>
-					</div>
-				</div>
-							
-					<div class="row">
-                     <div class="col-sm-6">
-                        <div class="form-group">
-							<label class="control-label">File saved</label>		
-							<input class="form-control border-form-control" type="text" value="" placeholder="file path">
+							<label class="control-label">Record</label>		
                         </div>
                      </div>         
                   </div>
                   <div class="row">
                      <div class="col-sm-6">
-                        <div class="form-group">
+                         <div class="form-group" id ="indent">     
 							<label class="control-label">Resolution</label>		
-							<select>
-							  <option value="avi">360p</option>
-							  <option value="mp4">720p</option>
-							  <option value="mpeg">1080p</option>
-							</select>
-							<hr size="30" width="600" color="grey">
+								<select>
+								  <option value="360p">360p</option>
+								  <option value="720p">720p</option>
+								  <option value="1080p">1080p</option>
+								</select>
+							</div>
+						</div>
+					</div>
+							
+					
+                  <div class="row">
+                     <div class="col-sm-6">
+                        <div class="form-group" id ="indent">
+							<label class="control-label">Video format</label>
+		                       <select>
+								 <option value="avi">avi</option>
+								 <option value="mp4">mp4</option>
+								 <option value="mpeg">mpeg</option>
+								 <option value="mk">mk</option>
+							   </select>
+						</div>
+                      </div>
+                  </div>         
+                  <div class="row">
+                     <div class="col-sm-6">
+                        <div class="form-group" id ="indent">
+							<label class="control-label">File saved</label>		
+							<input class="form-control border-form-control" type="text" value="" placeholder="file path">
+                        	<hr class = "two">
                         </div>
                      </div>         
                   </div>
@@ -239,25 +295,31 @@
                   </div>
                   <div class="row">
                      <div class="col-sm-6">
-                        <div class="form-group">
-							<label class="control-label">File return path</label>		
+                        <div class="form-group" id ="indent">
+							<label class="control-label">File saved</label>		
 							<input class="form-control border-form-control" type="text" value="" placeholder="file path">
                         </div>
                      </div>         
                   </div>
                   <div class="row">
                      <div class="col-sm-6">
-                        <div class="form-group">
-							<label class="control-label">File send path</label>		
+                        <div class="form-group" id ="indent">
+							<label class="control-label">File saved</label>		
 							<input class="form-control border-form-control" type="text" value="" placeholder="file path">
-                        	<hr size="30" width="600" color="grey">
-                        	
                         </div>
                      </div>         
                   </div>
-                     </div>         
-                  </div>   
-                  
+                    <!-- SAVE 버튼 추가 -->
+		         <div class="wrap_2">
+		            <div class="wrap" style="float: right;">
+		               <a href="#" class="button">저장</a>
+		            </div>
+		            <div class="wrap" style="float: right;">
+		               <a href="#" class="button">닫기</a>
+		            </div>
+		         </div>
+                </div>         
+              </div>                    
             </div>
             <!-- /.container-fluid -->
             <!-- Sticky Footer -->
