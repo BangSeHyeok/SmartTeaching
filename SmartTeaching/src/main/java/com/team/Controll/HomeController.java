@@ -10,6 +10,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
  * Handles requests for the application home page.
@@ -80,4 +81,18 @@ public class HomeController {
 	public String com_page() {	
 		return "com-page";
 	}
+	//채팅 홈 화면 띄우기
+	@RequestMapping(value = "/", method = RequestMethod.GET)
+	public String home() {
+		return "chatting";
+	}
+
+	//채팅 메시지 ajax로 받아서 
+	@RequestMapping(value = "/messageToSend", method = RequestMethod.POST)
+	@ResponseBody
+	public String MessageToSend(String msgToSend) {
+		System.out.println(msgToSend);
+		return msgToSend;
+	}
+
 }
