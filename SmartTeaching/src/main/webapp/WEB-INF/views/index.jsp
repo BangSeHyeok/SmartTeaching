@@ -3,6 +3,7 @@
 <!DOCTYPE>
 <html>
  <head>
+ 
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -10,7 +11,7 @@
       <meta name="author" content="Askbootstrap">
       <title>VIDOE - Video Streaming Website HTML Template</title>
       <!-- Favicon Icon -->
-      <link rel="icon" type="image/png" href="resources/img/favicon.png">
+      <link rel="icon" type="image/png" href="resources/img/teaching.png">
       <!-- Bootstrap core CSS-->
       <link href="resources/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
       <!-- Custom fonts for this template-->
@@ -21,23 +22,23 @@
       <link rel="stylesheet" href="resources/vendor/owl-carousel/owl.carousel.css">
       <link rel="stylesheet" href="resources/vendor/owl-carousel/owl.theme.css">
    </head>
+  
    <body id="page-top">
+   
       <nav class="navbar navbar-expand navbar-light bg-white static-top osahan-nav sticky-top">
          &nbsp;&nbsp; 
          <button class="btn btn-link btn-sm text-secondary order-1 order-sm-0" id="sidebarToggle">
          <i class="fas fa-bars"></i>
          </button> &nbsp;&nbsp;
-         <a class="navbar-brand mr-1" href="index"><img class="img-fluid" alt="" src="resources/img/logo.png"></a>
+         
+         
+         <a class="navbar-brand mr-1" href="index"><img class="img-fluid" alt="" src="resources/img/slogo.png"></a>
+      
          <!-- Navbar Search -->
          <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-5 my-2 my-md-0 osahan-navbar-search">
-            <div class="input-group">
-               <input type="text" class="form-control" placeholder="Search for...">
-               <div class="input-group-append">
-                  <button class="btn btn-light" type="button">
-                  <i class="fas fa-search"></i> 
-                  </button>
-               </div>
-            </div>
+        
+             <!-- Search for delete -->
+      
          </form>
          <!-- Navbar -->
          <ul class="navbar-nav ml-auto ml-md-0 osahan-right-navbar">
@@ -45,7 +46,11 @@
                <a class="nav-link" href="upload">
                <i class="fas fa-plus-circle fa-fw"></i>
                Upload Video
+               
                </a>
+                       
+               <!-- com-page button delete -->
+       
             </li>
             <li class="nav-item dropdown no-arrow mx-1">
                <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -92,37 +97,37 @@
             <li class="nav-item active">
                <a class="nav-link" href="index">
                <i class="fas fa-fw fa-home"></i>
-               <span>Home</span>
+               <span>관리</span>
                </a>
             </li>
             <li class="nav-item">
                <a class="nav-link" href="channels">
                <i class="fas fa-fw fa-users"></i>
-               <span>Channels</span>
+               <span>화면잠금</span>
                </a>
             </li>
             <li class="nav-item">
                <a class="nav-link" href="single-channel">
                <i class="fas fa-fw fa-user-alt"></i>
-               <span>Single Channel</span>
+               <span>파일전송</span>
                </a>
             </li>
             <li class="nav-item">
                <a class="nav-link" href="video-page">
                <i class="fas fa-fw fa-video"></i>
-               <span>Video Page</span>
+               <span>채팅</span>
                </a>
             </li>
             <li class="nav-item">
                <a class="nav-link" href="upload-video">
                <i class="fas fa-fw fa-cloud-upload-alt"></i>
-               <span>Upload Video</span>
+               <span>화면녹화</span>
                </a>
             </li>
             <li class="nav-item dropdown">
                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                <i class="fas fa-fw fa-folder"></i>
-               <span>Pages</span>
+               <span>환경설정</span>
                </a>
                <div class="dropdown-menu">
                   <h6 class="dropdown-header">Login Screens:</h6>
@@ -216,114 +221,11 @@
                      </div>
                      <div class="col-md-12">
                         <div class="owl-carousel owl-carousel-category">
-                           <div class="item">
-                              <div class="category-item">
-                                 <a href="#">
-                                    <img class="img-fluid" src="resources/img/s1.png" alt="">
-                                    <h6>Your Life</h6>
-                                    <p>74,853 views</p>
-                                 </a>
-                              </div>
-                           </div>
-                           <div class="item">
-                              <div class="category-item">
-                                 <a href="#">
-                                    <img class="img-fluid" src="resources/img/s2.png" alt="">
-                                    <h6>Unboxing Cool</h6>
-                                    <p>74,853 views</p>
-                                 </a>
-                              </div>
-                           </div>
-                           <div class="item">
-                              <div class="category-item">
-                                 <a href="#">
-                                    <img class="img-fluid" src="resources/img/s3.png" alt="">
-                                    <h6>Service Reviewing</h6>
-                                    <p>74,853 views</p>
-                                 </a>
-                              </div>
-                           </div>
-                           <div class="item">
-                              <div class="category-item">
-                                 <a href="#">
-                                    <img class="img-fluid" src="resources/img/s4.png" alt="">
-                                    <h6>Gaming <span title="" data-placement="top" data-toggle="tooltip" data-original-title="Verified"><i class="fas fa-check-circle text-success"></i></span></h6>
-                                    <p>74,853 views</p>
-                                 </a>
-                              </div>
-                           </div>
-                           <div class="item">
-                              <div class="category-item">
-                                 <a href="#">
-                                    <img class="img-fluid" src="resources/img/s5.png" alt="">
-                                    <h6>Technology Tutorials</h6>
-                                    <p>74,853 views</p>
-                                 </a>
-                              </div>
-                           </div>
-                           <div class="item">
-                              <div class="category-item">
-                                 <a href="#">
-                                    <img class="img-fluid" src="resources/img/s6.png" alt="">
-                                    <h6>Singing</h6>
-                                    <p>74,853 views</p>
-                                 </a>
-                              </div>
-                           </div>
-                           <div class="item">
-                              <div class="category-item">
-                                 <a href="#">
-                                    <img class="img-fluid" src="resources/img/s7.png" alt="">
-                                    <h6>Cooking</h6>
-                                    <p>74,853 views</p>
-                                 </a>
-                              </div>
-                           </div>
-                           <div class="item">
-                              <div class="category-item">
-                                 <a href="#">
-                                    <img class="img-fluid" src="resources/img/s8.png" alt="">
-                                    <h6>Traveling</h6>
-                                    <p>74,853 views</p>
-                                 </a>
-                              </div>
-                           </div>
-                           <div class="item">
-                              <div class="category-item">
-                                 <a href="#">
-                                    <img class="img-fluid" src="resources/img/s1.png" alt="">
-                                    <h6>Education</h6>
-                                    <p>74,853 views</p>
-                                 </a>
-                              </div>
-                           </div>
-                           <div class="item">
-                              <div class="category-item">
-                                 <a href="#">
-                                    <img class="img-fluid" src="resources/img/s2.png" alt="">
-                                    <h6>Noodles, Sauces & Instant Food</h6>
-                                    <p>74,853 views</p>
-                                 </a>
-                              </div>
-                           </div>
-                           <div class="item">
-                              <div class="category-item">
-                                 <a href="#">
-                                    <img class="img-fluid" src="resources/img/s3.png" alt="">
-                                    <h6>Comedy <span title="" data-placement="top" dat a-toggle="tooltip" data-original-title="Verified"><i class="fas fa-check-circle text-success"></i></span></h6>
-                                    <p>74,853 views</p>
-                                 </a>
-                              </div>
-                           </div>
-                           <div class="item">
-                              <div class="category-item">
-                                 <a href="#">
-                                    <img class="img-fluid" src="resources/img/s4.png" alt="">
-                                    <h6>Lifestyle Advice</h6>
-                                    <p>74,853 views</p>
-                                 </a>
-                              </div>
-                           </div>
+               
+                        
+                        <!-- Channel categories delete -->
+                          
+          
                         </div>
                      </div>
                   </div>
@@ -600,7 +502,7 @@
          <div class="container">
             <div class="row">
                <div class="col-lg-3 col-md-3">
-                  <div class="footer-logo mb-4"><a class="logo" href="index"><img alt="" src="resources/img/logo.png" class="img-fluid"></a></div>
+                  <div class="footer-logo mb-4"><a class="teachinglogo" href="index"><img alt="" src="resources/img/teachinglogo.png" class="img-fluid"></a></div>
                   <p>86 Petersham town, New South wales Waedll Steet, Australia</p>
                   <p class="mb-0"><a href="#" class="text-dark"><i class="fas fa-mobile fa-fw"></i> +61 525 240 310</a></p>
                   <p class="mb-0"><a href="#" class="text-dark"><i class="fas fa-envelope fa-fw"></i> iamosahan@gmail.com</a></p>
