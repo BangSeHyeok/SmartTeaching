@@ -68,6 +68,7 @@ Version: 1.0
     });
   }
 
+  
 	
   // Tooltip
   $('[data-toggle="tooltip"]').tooltip()

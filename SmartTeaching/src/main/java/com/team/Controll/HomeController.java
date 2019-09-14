@@ -18,7 +18,11 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class HomeController {
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String home(Locale locale, Model model) {	
+<<<<<<< HEAD
 		System.out.println("mastercopy");
+=======
+		System.out.println("kim");
+>>>>>>> branch 'kimjinmo' of https://github.com/BangSeHyeok/SmartTeaching.git
 		return "index";
 	}
 	@RequestMapping(value = "/404", method = RequestMethod.GET)
