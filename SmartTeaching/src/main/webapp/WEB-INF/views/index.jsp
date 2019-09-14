@@ -3,7 +3,6 @@
 <!DOCTYPE>
 <html>
  <head>
- 
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -30,7 +29,6 @@
          <button class="btn btn-link btn-sm text-secondary order-1 order-sm-0" id="sidebarToggle">
          <i class="fas fa-bars"></i>
          </button> &nbsp;&nbsp;
-         
          
          <a class="navbar-brand mr-1" href="index"><img class="img-fluid" alt="" src="resources/img/slogo.png"></a>
       
@@ -96,37 +94,37 @@
          <ul class="sidebar navbar-nav">
             <li class="nav-item active">
                <a class="nav-link" href="index">
-               <i class="fas fa-fw fa-home"></i>
+               <i class="fas fa-fw fa-briefcase"></i>
                <span>관리</span>
                </a>
             </li>
             <li class="nav-item">
                <a class="nav-link" href="channels">
-               <i class="fas fa-fw fa-users"></i>
+               <i class="fas fa-fw fa-lock"></i>
                <span>화면잠금</span>
                </a>
             </li>
             <li class="nav-item">
                <a class="nav-link" href="single-channel">
-               <i class="fas fa-fw fa-user-alt"></i>
+               <i class="fas fa-fw fa-save"></i>
                <span>파일전송</span>
                </a>
             </li>
             <li class="nav-item">
                <a class="nav-link" href="video-page">
-               <i class="fas fa-fw fa-video"></i>
+               <i class="fas fa-fw fa-comment-alt"></i>
                <span>채팅</span>
                </a>
             </li>
             <li class="nav-item">
                <a class="nav-link" href="upload-video">
-               <i class="fas fa-fw fa-cloud-upload-alt"></i>
+               <i class="fas fa-fw fa-clone"></i>
                <span>화면녹화</span>
                </a>
             </li>
             <li class="nav-item dropdown">
                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-               <i class="fas fa-fw fa-folder"></i>
+               <i class="fas fa-fw fa-cog"></i>
                <span>환경설정</span>
                </a>
                <div class="dropdown-menu">
@@ -216,7 +214,7 @@
                                  <a class="dropdown-item" href="#"><i class="fas fa-fw fa-times-circle"></i> &nbsp; Close</a>
                               </div>
                            </div>
-                           <h6>Channels Categories</h6>
+                           <h6>A class</h6>
                         </div>
                      </div>
                      <div class="col-md-12">
@@ -245,7 +243,7 @@
                                  <a class="dropdown-item" href="#"><i class="fas fa-fw fa-times-circle"></i> &nbsp; Close</a>
                               </div>
                            </div>
-                           <h6>Featured Videos</h6>
+                           <h6>A클래스 컴퓨터화면</h6>
                         </div>
                      </div>
                      <div class="col-xl-3 col-sm-6 mb-3">
@@ -408,6 +406,56 @@
                            </div>
                         </div>
                      </div>
+                     
+                      <div class="col-xl-3 col-sm-6 mb-3">
+                        <div class="video-card">
+                           <div class="video-card-image">
+                              <a class="play-icon" href="#"><i class="fas fa-play-circle"></i></a>
+                              <a href="#"><img class="img-fluid" src="resources/img/v9.png" alt=""></a>
+                              <div class="time">3:50</div>
+                           </div>
+                           <div class="video-card-body">
+                              <div class="video-title">
+                                 <a href="#">There are many variations of passages of Lorem</a>
+                              </div>
+                              <div class="video-page text-success">
+                                 Education  <a title="" data-placement="top" data-toggle="tooltip" href="#" data-original-title="Verified"><i class="fas fa-check-circle text-success"></i></a>
+                              </div>
+                              <div class="video-view">
+                                 1.8M views &nbsp;<i class="fas fa-calendar-alt"></i> 11 Months ago
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     
+                     
+                      <div class="col-xl-3 col-sm-6 mb-3">
+                        <div class="video-card">
+                           <div class="video-card-image">
+                              <a class="play-icon" href="#"><i class="fas fa-play-circle"></i></a>
+                              <a href="#"><img class="img-fluid" src="resources/img/v10.png" alt=""></a>
+                              <div class="time">3:50</div>
+                           </div>
+                           <div class="video-card-body">
+                              <div class="video-title">
+                                 <a href="#">There are many variations of passages of Lorem</a>
+                              </div>
+                              <div class="video-page text-success">
+                                 Education  <a title="" data-placement="top" data-toggle="tooltip" href="#" data-original-title="Verified"><i class="fas fa-check-circle text-success"></i></a>
+                              </div>
+                              <div class="video-view">
+                                 1.8M views &nbsp;<i class="fas fa-calendar-alt"></i> 11 Months ago
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     
+                     
+                     <!--  컴퓨터 화면추가  -->
+  
+  
+    
+                     
                   </div>
                </div>
                <hr class="mt-0">
