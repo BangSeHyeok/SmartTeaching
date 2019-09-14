@@ -1,12 +1,18 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+  <meta charset="UTF-8">
+  <title>Chat Widget</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'>
+<link rel="stylesheet" href="resources/css/chattingStyle.css">
 </head>
 <body>
+<!-- partial:index.partial.html -->
   <div class="container clearfix">
     <div class="people-list" id="people-list">
       <div class="search">
@@ -116,6 +122,9 @@
       </ul>
     </div>
     
+    
+    
+    
     <div class="chat">
       <div class="chat-header clearfix">
         <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/chat_avatar_01_green.jpg" alt="avatar" />
@@ -126,6 +135,8 @@
         </div>
         <i class="fa fa-star"></i>
       </div> <!-- end chat-header -->
+      
+      
       
       <div class="chat-history">
         <ul>
@@ -171,7 +182,7 @@
             </div>
           </li>
           
-          <li>
+         <!--  <li>
             <div class="message-data">
               <span class="message-data-name"><i class="fa fa-circle online"></i> Vincent</span>
               <span class="message-data-time">10:31 AM, Today</span>
@@ -179,11 +190,15 @@
             <i class="fa fa-circle online"></i>
             <i class="fa fa-circle online" style="color: #AED2A6"></i>
             <i class="fa fa-circle online" style="color:#DAE9DA"></i>
-          </li>
+          </li> -->
           
         </ul>
         
       </div> <!-- end chat-history -->
+      
+      
+      
+      
       
       <div class="chat-message clearfix">
         <textarea name="message-to-send" id="message-to-send" placeholder ="Type your message" rows="3"></textarea>
@@ -222,6 +237,11 @@
     </div>
   </li>
 </script>
+<!-- partial -->
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.0/handlebars.min.js'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/list.js/1.1.1/list.min.js'></script>
+<script  src="resources/js/chattingScript.js"></script>
 
 </body>
 </html>
