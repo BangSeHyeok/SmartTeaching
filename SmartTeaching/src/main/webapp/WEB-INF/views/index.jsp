@@ -24,6 +24,15 @@
   
    <body id="page-top">
    
+   
+   
+   
+   
+   
+   
+   
+   
+   
       <nav class="navbar navbar-expand navbar-light bg-white static-top osahan-nav sticky-top">
          &nbsp;&nbsp; 
          <button class="btn btn-link btn-sm text-secondary order-1 order-sm-0" id="sidebarToggle">
@@ -98,8 +107,8 @@
                <span>관리</span>
                </a>
                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="categories">컴퓨터</a>
-                  <a class="dropdown-item" href="categories">학생</a>
+                  <a class="dropdown-item" href="com-page">컴퓨터</a>
+                  <a class="dropdown-item" href="student-page">학생</a>
                  
                </div>
             </li>
@@ -119,7 +128,7 @@
                </a>
             </li>
             <li class="nav-item">
-               <a class="nav-link" href="video-page">
+               <a class="nav-link" href="chatting">
                <i class="fas fa-fw fa-comment-alt"></i>
                <span>채팅</span>
                </a>

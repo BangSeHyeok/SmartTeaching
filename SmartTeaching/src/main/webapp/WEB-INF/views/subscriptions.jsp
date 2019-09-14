@@ -22,22 +22,25 @@
       <link rel="stylesheet" href="resources/vendor/owl-carousel/owl.theme.css">
    </head>
    <body id="page-top">
+      
+      
+      
+      
+      
+      
       <nav class="navbar navbar-expand navbar-light bg-white static-top osahan-nav sticky-top">
          &nbsp;&nbsp; 
          <button class="btn btn-link btn-sm text-secondary order-1 order-sm-0" id="sidebarToggle">
          <i class="fas fa-bars"></i>
          </button> &nbsp;&nbsp;
-         <a class="navbar-brand mr-1" href="index"><img class="img-fluid" alt="" src="resources/img/logo.png"></a>
+         
+         <a class="navbar-brand mr-1" href="index"><img class="img-fluid" alt="" src="resources/img/slogo.png"></a>
+      
          <!-- Navbar Search -->
          <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-5 my-2 my-md-0 osahan-navbar-search">
-            <div class="input-group">
-               <input type="text" class="form-control" placeholder="Search for...">
-               <div class="input-group-append">
-                  <button class="btn btn-light" type="button">
-                  <i class="fas fa-search"></i> 
-                  </button>
-               </div>
-            </div>
+        
+             <!-- Search for delete -->
+      
          </form>
          <!-- Navbar -->
          <ul class="navbar-nav ml-auto ml-md-0 osahan-right-navbar">
@@ -45,7 +48,11 @@
                <a class="nav-link" href="upload">
                <i class="fas fa-plus-circle fa-fw"></i>
                Upload Video
+               
                </a>
+                       
+               <!-- com-page button delete -->
+       
             </li>
             <li class="nav-item dropdown no-arrow mx-1">
                <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -73,7 +80,7 @@
             </li>
             <li class="nav-item dropdown no-arrow osahan-right-navbar-user">
                <a class="nav-link dropdown-toggle user-dropdown-link" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-               <img alt="Avatar" src="img/user.png">
+               <img alt="Avatar" src="resources/img/user.png">
                Osahan 
                </a>
                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
@@ -89,40 +96,48 @@
       <div id="wrapper">
          <!-- Sidebar -->
          <ul class="sidebar navbar-nav">
-            <li class="nav-item active">
-               <a class="nav-link" href="index">
-               <i class="fas fa-fw fa-home"></i>
-               <span>Home</span>
+           <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" href="categories" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               <i class="fas fa-fw fa-briefcase"></i>
+               <span>관리</span>
                </a>
+               <div class="dropdown-menu">
+                  <a class="dropdown-item" href="com-page">컴퓨터</a>
+                  <a class="dropdown-item" href="student-page">학생</a>
+                 
+               </div>
             </li>
+            
+            
+            
             <li class="nav-item">
                <a class="nav-link" href="channels">
-               <i class="fas fa-fw fa-users"></i>
-               <span>Channels</span>
+               <i class="fas fa-fw fa-lock"></i>
+               <span>화면잠금</span>
                </a>
             </li>
             <li class="nav-item">
                <a class="nav-link" href="single-channel">
-               <i class="fas fa-fw fa-user-alt"></i>
-               <span>Single Channel</span>
+               <i class="fas fa-fw fa-save"></i>
+               <span>파일전송</span>
                </a>
             </li>
             <li class="nav-item">
-               <a class="nav-link" href="video-page">
-               <i class="fas fa-fw fa-video"></i>
-               <span>Video Page</span>
+               <a class="nav-link" href="chatting">
+               <i class="fas fa-fw fa-comment-alt"></i>
+               <span>채팅</span>
                </a>
             </li>
             <li class="nav-item">
                <a class="nav-link" href="upload-video">
-               <i class="fas fa-fw fa-cloud-upload-alt"></i>
-               <span>Upload Video</span>
+               <i class="fas fa-fw fa-clone"></i>
+               <span>화면녹화</span>
                </a>
             </li>
             <li class="nav-item dropdown">
                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-               <i class="fas fa-fw fa-folder"></i>
-               <span>Pages</span>
+               <i class="fas fa-fw fa-cog"></i>
+               <span>환경설정</span>
                </a>
                <div class="dropdown-menu">
                   <h6 class="dropdown-header">Login Screens:</h6>
@@ -131,27 +146,18 @@
                   <a class="dropdown-item" href="forgot-password">Forgot Password</a>
                   <div class="dropdown-divider"></div>
                   <h6 class="dropdown-header">Other Pages:</h6>
-                  <a class="dropdown-item" href="404">404 Page</a>
+                  <a class="dropdown-item" href="blog">Blog</a>
+                  <a class="dropdown-item" href="blog-detail">Blog Detail</a>
                   <a class="dropdown-item" href="blank">Blank Page</a>
+                  <a class="dropdown-item" href="404">404 Page</a>
+                  <a class="dropdown-item" href="contact">Contact</a>
                </div>
             </li>
-            <li class="nav-item">
-               <a class="nav-link" href="history-page">
-               <i class="fas fa-fw fa-history"></i>
-               <span>History Page</span>
-               </a>
-            </li>
-            <li class="nav-item dropdown">
-               <a class="nav-link dropdown-toggle" href="categories" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-               <i class="fas fa-fw fa-list-alt"></i>
-               <span>Categories</span>
-               </a>
-               <div class="dropdown-menu">
-                  <a class="dropdown-item" href="categories">Movie</a>
-                  <a class="dropdown-item" href="categories">Music</a>
-                  <a class="dropdown-item" href="categories">Television</a>
-               </div>
-            </li>
+            
+            
+            
+            
+            
             <li class="nav-item channel-sidebar-list">
                <h6>SUBSCRIPTIONS</h6>
                <ul>

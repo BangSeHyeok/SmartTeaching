@@ -1,7 +1,5 @@
 package com.team.Controll;
 
-import java.text.DateFormat;
-import java.util.Date;
 import java.util.Locale;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -9,14 +7,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-/**
- * Handles requests for the application home page.
- */
 @Controller
 public class HomeController {
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String home(Locale locale, Model model) {	
-		return "home";
+		return "index";
 	}
 	@RequestMapping(value = "/404", method = RequestMethod.GET)
 	public String home_404() {	
@@ -83,7 +78,6 @@ public class HomeController {
 	public String chatting() {
 		return "chatting";
 	}
-
 	//채팅 메시지 ajax로 받아서 
 	@RequestMapping(value = "/messageToSend", method = RequestMethod.POST)
 	@ResponseBody
@@ -91,5 +85,34 @@ public class HomeController {
 		System.out.println(msgToSend);
 		return msgToSend;
 	}
-
+	@RequestMapping(value = "/basesetting", method = RequestMethod.GET)
+	public String basesetting() {	
+		return "basesetting";
+	}
+	@RequestMapping(value = "/com_registration", method = RequestMethod.GET)
+	public String comRegistration() {	
+		return "com_registration";
+	}
+	@RequestMapping(value = "/file_send", method = RequestMethod.GET)
+	public String fileSend() {	
+		return "file_send";
+	}
+	@RequestMapping(value = "/login", method = RequestMethod.GET)
+	public String login() {	
+		return "login";
+	}
+	@RequestMapping(value = "/monitor-lock", method = RequestMethod.GET)
+	public String monitorLock() {	
+		return "monitor-lock";
+	}
+	@RequestMapping(value = "/student_registration", method = RequestMethod.GET)
+	public String studentRegistration() {	
+		return "student_registrationk";
+	}
+	@RequestMapping(value = "/student-page", method = RequestMethod.GET)
+	public String studentPage() {	
+		return "student-page";
+	}
+	
+	
 }
