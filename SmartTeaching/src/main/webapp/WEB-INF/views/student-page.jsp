@@ -212,7 +212,7 @@ a.button:hover {
 		<div id="content-wrapper">
 		
 			<div class="container-fluid upload-details">
-			<h6 style="margin-bottom:20px;">Computer List</h6>
+			<h6 style="margin-bottom:20px;">Student List</h6>
 				<div>
 					<form
 						class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-5 my-2 my-md-0 osahan-navbar-search">

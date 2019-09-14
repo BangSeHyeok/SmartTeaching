@@ -7,12 +7,47 @@
 <title>Computor Registration</title>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
-	
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script
+	src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+
 <script>
 </script>
+<style type="text/css">
+.wrap {
+	text-align: center;
+	display: inline-block;
+	margin-top: 10px;
+}
+
+a {
+	-webkit-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+	-moz-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+	-ms-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+	-o-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+	transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+	display: block;
+	max-width: 180px;
+	text-decoration: none;
+	border-radius: 4px;
+	padding: 10px 40px;
+}
+
+a.button {
+	background-color: #383737; 
+	color: #ffffff;
+	box-shadow: #e3dfdf 0 0px 0px 2px inset;
+}
+
+a.button:hover {
+	color: #D1FF62; /* 폰트 색깔 */
+	font-weight:bold; /* 폰트 굵기 */
+	box-shadow: #D1FF62 0 0px 0px 2px inset;
+}
+</style>
 <style>
 * {
 	margin: 0;
@@ -173,22 +208,32 @@ input[type=checkbox].error:after {
 					type="text" name="name" minlength="2" required>
 			</div>
 			<div class="form-group">
-				<label for="age">Age:</label> <input class="form-control"
-					type="text" name="age" minlength="2" required>
+				<label for="age">AGE:</label> <input class="form-control" type="text"
+					name="ip" minlength="2" required>
 			</div>
 			<div class="form-group">
-				<label for="telephone">Telephone:</label> <input
-					class="form-control" type="text" name="telephone" id="phone"
-					required>
+				<label for="telephone">Phone:</label> <input class="form-control"
+					type="text" name="Phone" id="phone" required>
 			</div>
 			<div class="form-group">
-				<label for="email">Email:</label> <input class="form-control"
-					type="text" name="email" required>
+				<label for="telemail">E-mail:</label> <input class="form-control"
+					type="text" name="mail" id="mail" required>
 			</div>
-			<div class="form-group">
-				<input class="submit form-control" type="submit" name="submit" value="등록">
-				<input class="submit form-control" type="reset" value="닫기">
+			
+			<div style="margin-left: 50px">
+				<div class="wrap" >
+					<a href="#" class="button">등록</a>
+				</div>
+				<div class="wrap" style="margin-left: 30px">
+					<a href="#" class="button">닫기</a>
+				</div>
 			</div>
+			<!-- 	<div class="form-group">
+			
+				<input class="submit form-control" type="submit" name="submit"
+					value="등록"> <input class="submit form-control" type="reset"
+					value="닫기">
+			</div> -->
 		</form>
 	</div>
 </body>
