@@ -103,9 +103,7 @@
                  
                </div>
             </li>
-            
-            
-            
+    
             <li class="nav-item">
                <a class="nav-link" href="channels">
                <i class="fas fa-fw fa-lock"></i>
@@ -150,12 +148,7 @@
                </div>
             </li>
            
-           
-           
-           
-           
-           
-           
+               
             <li class="nav-item channel-sidebar-list">
                <h6>SUBSCRIPTIONS</h6>
                <ul>
@@ -447,13 +440,10 @@
                            </div>
                         </div>
                      </div>
-                     
-                     
+                                    
                      <!--  컴퓨터 화면추가  -->
   
   
-    
-                     
                   </div>
                </div>
                <hr class="mt-0">

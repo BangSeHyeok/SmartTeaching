@@ -1,6 +1,7 @@
 package com.team.Controll;
 
 import java.text.DateFormat;
+
 import java.util.Date;
 import java.util.Locale;
 import org.springframework.stereotype.Controller;
@@ -16,7 +17,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class HomeController {
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String home(Locale locale, Model model) {	
-		return "home";
+		return "chatting";
 	}
 	@RequestMapping(value = "/404", method = RequestMethod.GET)
 	public String home_404() {	
