@@ -38,6 +38,7 @@ var video = document.getElementById("myVideo");
 			  });
 			});
 	})
+	
 </script>
 
 <style>

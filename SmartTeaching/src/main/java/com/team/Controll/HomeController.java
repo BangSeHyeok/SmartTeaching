@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class HomeController {
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String home(Locale locale, Model model) {	
-		return "home";
+		return "findpassword";
 	}
 	@RequestMapping(value = "/404", method = RequestMethod.GET)
 	public String home_404() {	
@@ -29,18 +29,6 @@ public class HomeController {
 	@RequestMapping(value = "/blank", method = RequestMethod.GET)
 	public String blank() {	
 		return "blank";
-	}
-	@RequestMapping(value = "/categories", method = RequestMethod.GET)
-	public String categories() {	
-		return "categories";
-	}
-	@RequestMapping(value = "/channels", method = RequestMethod.GET)
-	public String channels() {	
-		return "channels";
-	}
-	@RequestMapping(value = "/forgot-password", method = RequestMethod.GET)
-	public String forgot_password() {	
-		return "forgot-password";
 	}
 	@RequestMapping(value = "/history-page", method = RequestMethod.GET)
 	public String history_page() {	
@@ -78,13 +66,13 @@ public class HomeController {
 	public String com_page() {	
 		return "com-page";
 	}
-	//채팅 홈 화면 띄우기
+	//梨꾪똿 �솃 �솕硫� �쓣�슦湲�
 	@RequestMapping(value = "/chatting", method = RequestMethod.GET)
 	public String chatting() {
 		return "chatting";
 	}
 
-	//채팅 메시지 ajax로 받아서 
+	//梨꾪똿 硫붿떆吏� ajax濡� 諛쏆븘�꽌 
 	@RequestMapping(value = "/messageToSend", method = RequestMethod.POST)
 	@ResponseBody
 	public String MessageToSend(String msgToSend) {
