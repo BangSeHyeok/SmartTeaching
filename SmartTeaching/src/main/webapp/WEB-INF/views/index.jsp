@@ -8,7 +8,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <meta name="description" content="Askbootstrap">
       <meta name="author" content="Askbootstrap">
-      <title>VIDOE - Video Streaming Website HTML Template</title>
+      <title>SmartTeaching - Remote Desktop</title>
       <!-- Favicon Icon -->
       <link rel="icon" type="image/png" href="resources/img/teaching.png">
       <!-- Bootstrap core CSS-->
@@ -20,19 +20,30 @@
       <!-- Owl Carousel -->
       <link rel="stylesheet" href="resources/vendor/owl-carousel/owl.carousel.css">
       <link rel="stylesheet" href="resources/vendor/owl-carousel/owl.theme.css">
+      <script>
+
+
+      function monitor_lock(){
+          var popupX = (window.screen.width / 2);
+          // 만들 팝업창 좌우 크기의 1/2 만큼 보정값으로 빼주었음
+
+          var popupY= (window.screen.height / 2);
+          // 만들 팝업창 상하 크기의 1/2 만큼 보정값으로 빼주었음
+    	  window.open("monitor-lock", "_blank", 'toolbar=yes,menubar=yes,width=700,height=1000, left='+ popupX + ', top='+ popupY);	  
+      }
+      function file_send(){
+          var popupX = (window.screen.width / 2);
+          // 만들 팝업창 좌우 크기의 1/2 만큼 보정값으로 빼주었음
+
+          var popupY= (window.screen.height / 2);
+          // 만들 팝업창 상하 크기의 1/2 만큼 보정값으로 빼주었음
+            window.open("file_send", "_blank", 'toolbar=yes,menubar=yes,width=700,height=1000, left='+ popupX + ', top='+ popupY);	  
+  
+      }
+      </script>
    </head>
   
    <body id="page-top">
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
       <nav class="navbar navbar-expand navbar-light bg-white static-top osahan-nav sticky-top">
          &nbsp;&nbsp; 
          <button class="btn btn-link btn-sm text-secondary order-1 order-sm-0" id="sidebarToggle">
@@ -50,20 +61,13 @@
          <!-- Navbar -->
          <ul class="navbar-nav ml-auto ml-md-0 osahan-right-navbar">
             <li class="nav-item mx-1">
-               <a class="nav-link" href="upload">
+               <a class="nav-link" href="">
                <i class="fas fa-plus-circle fa-fw"></i>
-               Upload Video
-               
-               </a>
-                       
+            		화면녹화
+               </a>          
                <!-- com-page button delete -->
-       
             </li>
             <li class="nav-item dropdown no-arrow mx-1">
-               <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-               <i class="fas fa-bell fa-fw"></i>
-               <span class="badge badge-danger">9+</span>
-               </a>
                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="alertsDropdown">
                   <a class="dropdown-item" href="#"><i class="fas fa-fw fa-edit "></i> &nbsp; Action</a>
                   <a class="dropdown-item" href="#"><i class="fas fa-fw fa-headphones-alt "></i> &nbsp; Another action</a>
@@ -112,17 +116,14 @@
                  
                </div>
             </li>
-            
-            
-            
             <li class="nav-item">
-               <a class="nav-link" href="channels">
+               <a class="nav-link" id="monitor" href="#" onclick="monitor_lock()">
                <i class="fas fa-fw fa-lock"></i>
                <span>화면잠금</span>
                </a>
             </li>
             <li class="nav-item">
-               <a class="nav-link" href="single-channel">
+               <a class="nav-link" href="#" onclick = "file_send()">
                <i class="fas fa-fw fa-save"></i>
                <span>파일전송</span>
                </a>
@@ -158,13 +159,6 @@
                   <a class="dropdown-item" href="contact">Contact</a>
                </div>
             </li>
-           
-           
-           
-           
-           
-           
-           
             <li class="nav-item channel-sidebar-list">
                <h6>SUBSCRIPTIONS</h6>
                <ul>
@@ -226,11 +220,7 @@
                      </div>
                      <div class="col-md-12">
                         <div class="owl-carousel owl-carousel-category">
-               
-                        
                         <!-- Channel categories delete -->
-                          
-          
                         </div>
                      </div>
                   </div>

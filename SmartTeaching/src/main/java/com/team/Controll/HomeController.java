@@ -5,6 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
@@ -93,17 +94,9 @@ public class HomeController {
 	public String comRegistration() {	
 		return "com_registration";
 	}
-	@RequestMapping(value = "/file_send", method = RequestMethod.GET)
-	public String fileSend() {	
-		return "file_send";
-	}
 	@RequestMapping(value = "/login", method = RequestMethod.GET)
 	public String login() {	
 		return "login";
-	}
-	@RequestMapping(value = "/monitor-lock", method = RequestMethod.GET)
-	public String monitorLock() {	
-		return "monitor-lock";
 	}
 	@RequestMapping(value = "/student_registration", method = RequestMethod.GET)
 	public String studentRegistration() {	
@@ -114,5 +107,12 @@ public class HomeController {
 		return "student-page";
 	}
 	
-	
+	@RequestMapping(value = "/monitor-lock", method = RequestMethod.GET)
+	public void monitor_lock(Model model) throws Exception{
+
+	}
+	@RequestMapping(value = "/file_send", method = RequestMethod.GET)
+	public void file_send(Model model) throws Exception{
+
+	}
 }

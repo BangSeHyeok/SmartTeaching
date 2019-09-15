@@ -25,7 +25,7 @@
 					+ (window.outerWidth - window.innerWidth);
 
 			strHeight = $('#resize').outerHeight()
-					+ (window.outerHeight - window.innerHeight);
+					+ (window.outerHeight - window.innerHeight) + 80;
 
 		}
 
