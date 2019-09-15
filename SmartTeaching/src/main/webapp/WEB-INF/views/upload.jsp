@@ -8,7 +8,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <meta name="description" content="Askbootstrap">
       <meta name="author" content="Askbootstrap">
-      <title>VIDOE - Video Streaming Website HTML Template</title>
+      <title>VIDOE - Video Streaming Website HTML Template hey hey</title>
       <!-- Favicon Icon -->
       <link rel="icon" type="image/png" href="resources/img/favicon.png">
       <!-- Bootstrap core CSS-->
