@@ -16,15 +16,19 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class HomeController {
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String home(Locale locale, Model model) {	
-		return "findpassword";
+		return "home";
+	}
+	@RequestMapping(value = "/index", method = RequestMethod.GET)
+	public String index(Locale locale, Model model) {	
+		return "index";
 	}
 	@RequestMapping(value = "/404", method = RequestMethod.GET)
 	public String home_404() {	
 		return "404";
 	}
-	@RequestMapping(value = "/account", method = RequestMethod.GET)
-	public String account() {	
-		return "account";
+	@RequestMapping(value = "/update", method = RequestMethod.GET)
+	public String update() {	
+		return "update";
 	}
 	@RequestMapping(value = "/blank", method = RequestMethod.GET)
 	public String blank() {	
@@ -38,9 +42,9 @@ public class HomeController {
 	public String register() {	
 		return "register";
 	}
-	@RequestMapping(value = "/settings", method = RequestMethod.GET)
-	public String settings() {	
-		return "settings";
+	@RequestMapping(value = "/basesettings", method = RequestMethod.GET)
+	public String basesettings() {	
+		return "basesettings";
 	}
 	@RequestMapping(value = "/single-channel", method = RequestMethod.GET)
 	public String single_channel() {	

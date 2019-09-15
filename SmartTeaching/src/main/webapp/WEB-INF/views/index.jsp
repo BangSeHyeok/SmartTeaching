@@ -80,9 +80,9 @@
                Osahan 
                </a>
                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
-                  <a class="dropdown-item" href="account"><i class="fas fa-fw fa-user-circle"></i> &nbsp; My Account</a>
+                  <a class="dropdown-item" href="update"><i class="fas fa-fw fa-user-circle"></i> &nbsp; My Account</a>
                   <a class="dropdown-item" href="subscriptions"><i class="fas fa-fw fa-video"></i> &nbsp; Subscriptions</a>
-                  <a class="dropdown-item" href="settings"><i class="fas fa-fw fa-cog"></i> &nbsp; Settings</a>
+                  <a class="dropdown-item" href="basesettings"><i class="fas fa-fw fa-cog"></i> &nbsp; Settings</a>
                   <div class="dropdown-divider"></div>
                   <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal"><i class="fas fa-fw fa-sign-out-alt"></i> &nbsp; Logout</a>
                </div>
