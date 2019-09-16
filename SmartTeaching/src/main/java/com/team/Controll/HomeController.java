@@ -3,6 +3,11 @@ package com.team.Controll;
 import java.text.DateFormat;
 import java.util.Date;
 import java.util.Locale;
+
+import javax.inject.Inject;
+
+import org.apache.ibatis.session.SqlSession;
+import org.apache.ibatis.session.SqlSessionFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,9 +18,20 @@ import org.springframework.web.bind.annotation.ResponseBody;
  * Handles requests for the application home page.
  */
 @Controller
-public class HomeController {
+public class HomeController {	
+	@Inject
+	private SqlSessionFactory sqlsessionfactory;
+	
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String home(Locale locale, Model model) {	
+	System.out.println(sqlsessionfactory);
+	
+	try(SqlSession session = sqlsessionfactory.openSession()) {
+        System.out.println(session);
+    } catch(Exception e) {
+        e.printStackTrace();
+    }
+	
 		return "home";
 	}
 	@RequestMapping(value = "/index", method = RequestMethod.GET)

@@ -19,6 +19,7 @@
 
 <script>
 var video = document.getElementById("myVideo");
+
 $(function(){
 	$('#login-button').click(function(){
 		$('#login-button').fadeOut("slow",function(){
@@ -26,7 +27,14 @@ $(function(){
 			    TweenMax.from("#container", .4, { scale: 0, ease:Sine.easeInOut});
 			    TweenMax.to("#container", .4, { scale: 1, ease:Sine.easeInOut});
 		});
+		/*  
+		$('#login-button').click(function(){
+			var id = $("#id").val();
+			var pwd = $("#pwd").val();	
+		$("#login").submit();
+		*/
 	});
+  
 	$(".close-btn").click(function(){
 		TweenMax.from("#container", .4, { scale: 1, ease:Sine.easeInOut});
 		TweenMax.to("#container", .4, { left:"0px", scale: 0, ease:Sine.easeInOut});
@@ -34,13 +42,13 @@ $(function(){
 			$("#login-button").fadeIn(800);
 		 });
 	});
-			/* Forgotten Password */
+	
+	/* Forgotten Password */
 	$('#forgotten').click(function(){
-		$("#container").fadeOut(function(){
-			$("#forgotten-container").fadeIn();
+			  $("#container").fadeOut(function(){
+			    $("#forgotten-container").fadeIn();
 			  });
 			});
-		
 			
 	})
 	
@@ -285,16 +293,12 @@ a:hover {
 	</div>
 	<div id="container">
 		<h1>Log In</h1>
-		<span class="close-btn"> <img
-			onclick="javascript:location.href='http://localhost:8888/';"
-			style="cursor: pointer;"
-			src="https://cdn4.iconfinder.com/data/icons/miu/22/circle_close_delete_-128.png"></img>
+		<span class="close-btn"> <img src="https://cdn4.iconfinder.com/data/icons/miu/22/circle_close_delete_-128.png"></img>
 		</span>
 
-		<form>
+		<form action="login" id = "login" method="post">
 			<input type="email" name="email" placeholder="E-mail"> <input
-				type="password" name="pass" placeholder="Password"> <a
-				href="#"
+				type="password" name="pass" placeholder="Password"> <a href="#"
 				onclick="javascript:location.href='http://localhost:8888/index';"
 				style="cursor: pointer;">Log in</a>
 			<div id="remember-container">
@@ -308,15 +312,12 @@ a:hover {
 	<!-- Forgotten Password Container -->
 	<div id="forgotten-container">
 		<h1>Forgotten</h1>
-		<span type="button" class="close-btn"> <img
-			onclick="javascript:location.href='http://localhost:8888/';"
-			style="cursor: pointer;"
-			src="https://cdn4.iconfinder.com/data/icons/miu/22/circle_close_delete_-128.png"></img>
+		<span type="button" class="close-btn"> <img src="https://cdn4.iconfinder.com/data/icons/miu/22/circle_close_delete_-128.png"></img>
 		</span>
 
 		<form>
-			<input type="email" name="email" placeholder="E-mail"> <a
-				href="#" class="orange-btn">Get new password</a>
+			<input type="email" name="email" placeholder="E-mail"> 
+			<a href="#" class="orange-btn">Get new password</a>
 		</form>
 	</div>
 
